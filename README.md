@@ -49,3 +49,39 @@ bash ./db/migrations/all_up.sh
 ```bash
 make run
 ```
+## Parking Lot System API Endpoints
+
+### User Endpoints
+
+- **POST /user**: Create a new user
+- **PUT /user/:id**: Update user details by ID
+- **GET /user/:id**: Get user details by ID
+- **DELETE /user/:id**: Delete user by ID
+- **GET /user**: Get all users
+
+### Parking Lot Endpoints
+
+- **POST /lot**: Create a new parking lot
+- **PUT /lot/:id**: Update parking lot details by ID
+- **GET /lot/:id**: Get parking lot details by ID
+- **DELETE /lot/:id**: Delete parking lot by ID
+- **GET /lot**: Get all parking lots
+
+### Slot Endpoints
+
+- **POST /slot**: Create a new parking slot
+- **PATCH /slot/:id**: Update parking slot status by ID
+- **GET /slot/:id**: Get parking slot details by ID
+- **DELETE /slot/:id**: Delete parking slot by ID
+- **GET /slot**: Get all parking slots
+
+### Book Slot Endpoints
+
+- **POST /book**: Book a parking slot
+- **PATCH /book/:id**: Update booked parking slot details by ID
+- **GET /book/:id**: Get booked parking slot details by ID
+- **DELETE /book/:id**: Delete booked parking slot by ID
+- **GET /book**: Get all booked parking slots
+- **GET /book/stats**: Get statistics for booked parking slots
+
+
